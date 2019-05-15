@@ -59,12 +59,18 @@ public class ImgData extends CordovaPlugin {
     // execute是必须重写的方法，会有三个构造方法，按需重写自己需要的，
     // execute方法中的action参数是和Toast.js关联使用的，
     // args是js返回的参数，callbackContext是对js的回调
+    private BluetoothAdapter mBtAdapter;
     private CallbackContext readInfoCallBack;
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         if (action.equals("getImgData")) {// 启动扫描，需要手动调用终止扫描方法
-
+            // String message = args.getString(0);
+            activity = this.cordova.getActivity();
+            // Toast.makeText(activity, "message", Toast.LENGTH_SHORT).show();
+            // discoveryCallBack = callbackContext;
+            // doDiscovery();
+            // Log.i("ddd","message");
             // 返回的回调
             readInfoCallBack = callbackContext;
 
