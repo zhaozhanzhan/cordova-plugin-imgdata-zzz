@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-imgdata-zzz" version="1.0.2" 
+    xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>ImgData</name>
+    <js-module name="ImgData" src="www/ImgData.js">
+        <clobbers target="cordova.plugins.imgData" />
+    </js-module>
+    <platform name="android">
+        <framework src="id.zelory:compressor:2.1.0" />
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="ImgData">
+                <param name="android-package" value="com.zzz.ImgData" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml" />
+
+        <lib-file src="src/android/libs/QRSDK_Ver2.2.0.jar" />
+        <lib-file src="src/android/libs/gson-2.8.5.jar" />
+        <resource-file src ="src/android/libs/jniLibs/arm64-v8a/libQR386SDK.so" target="jniLibs/arm64-v8a/libQR386SDK.so" />
+        <resource-file src ="src/android/libs/jniLibs/armeabi/libQR386SDK.so" target="jniLibs/armeabi/libQR386SDK.so" />
+        <resource-file src ="src/android/libs/jniLibs/armeabi-v7a/libQR386SDK.so" target="jniLibs/armeabi-v7a/libQR386SDK.so" />
+        <resource-file src ="src/android/libs/jniLibs/mips/libQR386SDK.so" target="jniLibs/mips/libQR386SDK.so" />
+        <resource-file src ="src/android/libs/jniLibs/mips64/libQR386SDK.so" target="jniLibs/mips64/libQR386SDK.so" />
+        <resource-file src ="src/android/libs/jniLibs/x86/libQR386SDK.so" target="jniLibs/x86/libQR386SDK.so" />
+        <resource-file src ="src/android/libs/jniLibs/x86_64/libQR386SDK.so" target="jniLibs/x86_64/libQR386SDK.so" />
+
+        <source-file src="src/android/ImgData.java" target-dir="src/com/zzz" />
+    </platform>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="ImgData">
+                <param name="ios-package" value="ImgData" />
+            </feature>
+        </config-file>
+        <source-file src="src/ios/ImgData.m" />
+    </platform>
+</plugin>

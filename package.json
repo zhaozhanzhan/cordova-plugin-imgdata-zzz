@@ -1,0 +1,64 @@
+{
+    "_from": "cordova-plugin-imgdata-zzz",
+    "_inBundle": false,
+    "_integrity": "sha512-wSB3sa2FGPF4Xg38f32HEcGf+2xoStSmVtTAK2IEqKVO3UJ1C/cOOPNEsVyV6662Hj69sCbQ9IGAjiGU2RFb5Q==",
+    "_location": "/cordova-plugin-imgdata-zzz",
+    "_phantomChildren": {},
+    "_requested": {
+        "type": "tag",
+        "registry": true,
+        "raw": "cordova-plugin-imgdata-zzz",
+        "name": "cordova-plugin-imgdata-zzz",
+        "escapedName": "cordova-plugin-imgdata-zzz",
+        "rawSpec": "",
+        "saveSpec": null,
+        "fetchSpec": "latest"
+    },
+    "_requiredBy": [
+        "#USER",
+        "/"
+    ],
+    "_resolved": "https://registry.npmjs.org/cordova-plugin-imgdata-zzz/-/cordova-plugin-imgdata-zzz-1.0.2.tgz",
+    "_shasum": "8d989e6160c2edcd86701c974d8446b8ba5ae781",
+    "_spec": "cordova-plugin-imgdata-zzz",
+    "_where": "",
+    "author": "799316652@qq.com",
+    "bugs": {
+        "url": "https://github.com/zhaozhanzhan/cordova-plugin-imgdata-zzz/issues"
+    },
+    "bundleDependencies": false,
+    "cordova": {
+        "id": "cordova-plugin-imgdata-zzz",
+        "platforms": [
+            "android",
+            "ios",
+            "wp8",
+            "windows"
+        ]
+    },
+    "deprecated": false,
+    "description": "A File Opener Plugin for Cordova. (The Original Version)",
+    "engines": [{
+        "name": "cordova",
+        "version": ">=1.0.2"
+    }],
+    "homepage": "https://github.com/zhaozhanzhan/cordova-plugin-imgdata-zzz#readme",
+    "keywords": [
+        "ecosystem:cordova",
+        "cordova-android",
+        "cordova-ios",
+        "cordova-wp8",
+        "cordova-windows"
+    ],
+    "license": "MIT",
+    "name": "cordova-plugin-imgdata-zzz",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zhaozhanzhan/cordova-plugin-imgdata-zzz.git"
+    },
+    "version": "1.0.2",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
+}
